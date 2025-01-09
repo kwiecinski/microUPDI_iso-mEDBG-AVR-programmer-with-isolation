@@ -5,9 +5,10 @@ DIY UPDI programmer with additional data line isolators, allowing you to safely 
 This project is based on the original [microUPDI project by MCUdude](https://github.com/MCUdude/microUPDI),\
 and the firmware is sourced from [microUPDIcore](https://github.com/MCUdude/microUPDIcore).
 
-
-![](docs/microUPDI_isolated_bottom.png)
-![](docs/microUPDI_isolated_top.png)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+    <img src="docs/microUPDI_isolated_front.png" alt="microUPDI front" style="width: 45%;"/>
+    <img src="docs/microUPDI_isolated_bottom.png" alt="microUPDI bottom" style="width: 45%;"/>
+</div>
 
 ---
 
