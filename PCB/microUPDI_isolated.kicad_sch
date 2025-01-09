@@ -3196,6 +3196,12 @@
 		(uuid "168d01e5-3d5c-4324-9f59-e70094b3b22b")
 	)
 	(junction
+		(at 50.8 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "205fad79-0da7-4d79-bbab-7d88a1bba5dc")
+	)
+	(junction
 		(at 67.31 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3532,6 +3538,16 @@
 			(type default)
 		)
 		(uuid "2e726af8-db60-4ff0-9b65-f18fc5e9945a")
+	)
+	(wire
+		(pts
+			(xy 116.84 67.31) (xy 127 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f1a34e9-6d8b-4694-92ad-fdd19819b255")
 	)
 	(wire
 		(pts
@@ -3885,7 +3901,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 57.15) (xy 67.31 57.15)
+			(xy 39.37 57.15) (xy 50.8 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4175,6 +4191,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 57.15) (xy 67.31 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe5f9f2-ea4a-4d15-b513-0bd2229ffa9d")
+	)
+	(wire
+		(pts
 			(xy 74.93 57.15) (xy 74.93 64.77)
 		)
 		(stroke
@@ -4335,7 +4361,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 81.28) (xy 123.19 81.28)
+			(xy 116.84 81.28) (xy 120.65 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4817,7 +4843,7 @@
 	)
 	(global_label "UPDI"
 		(shape input)
-		(at 123.19 81.28 0)
+		(at 120.65 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4827,7 +4853,7 @@
 		)
 		(uuid "92f30644-3423-4e71-9809-891662f757e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.6505 81.28 0)
+			(at 128.1105 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,6 +5181,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 127 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08f4c40c-d60f-4c0a-8ec8-94ea225198ae")
+		(property "Reference" "#PWR019"
+			(at 127 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 79.0631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d852681-3d7f-4097-bc39-1e755490ebb1")
+		)
+		(instances
+			(project "microUPDI_isolated"
+				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 260.35 97.79 90)
 		(unit 1)
@@ -5284,6 +5376,75 @@
 			(project "microUPDI_isolated"
 				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 127 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12427f74-ee2d-45ca-b18d-a7438aa21f85")
+		(property "Reference" "C8"
+			(at 129.54 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 129.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+			(at 127.9652 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "30960a6d-5c06-47c2-95d4-8523b203b88a")
+		)
+		(pin "1"
+			(uuid "2f048151-6aa4-44b4-ba6a-e34f3de7fa0e")
+		)
+		(instances
+			(project "microUPDI_isolated"
+				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5625,6 +5786,75 @@
 			(project "microUPDI_isolated"
 				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 50.8 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26d1ee4d-07cc-4434-a928-cc8c930da2c6")
+		(property "Reference" "C9"
+			(at 53.34 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 53.34 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
+			(at 51.7652 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 50.8 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f296c6b3-97be-4b55-8340-9f6ff622c035")
+		)
+		(pin "1"
+			(uuid "aaf1ff34-5ddb-4315-b74d-ab9e322014c7")
+		)
+		(instances
+			(project "microUPDI_isolated"
+				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6251,6 +6481,72 @@
 			(project "microUPDI_isolated"
 				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d7d19ad-9973-4fad-9b03-b029de6f6cf0")
+		(property "Reference" "#PWR020"
+			(at 50.8 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 68.9031 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39a990d4-2a49-4c49-a4c3-32c6efb345a8")
+		)
+		(instances
+			(project "microUPDI_isolated"
+				(path "/8ef65a93-dee4-459c-811a-1e298fa6072c"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
